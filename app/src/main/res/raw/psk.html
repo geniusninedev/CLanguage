@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>printf scanf in C</title>
+</head>
+
+<body>
+
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+printf scanf in 'C'</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The printf() and scanf() functions are used for input and output in 'C' language. 
+Both functions are inbuilt library functions, defined in stdio.h (header file).</p>
+<h4 class="h4" style="font-family: erdana, helvetica, arial, sans-serif; color: rgb(97, 11, 75); font-size: 18px; font-weight: 600; margin-left: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+printf() function</h4>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The<span class="Apple-converted-space">&nbsp;</span><b>printf() function</b><span class="Apple-converted-space">&nbsp;</span>is 
+used for output. It prints the given statement to the console.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The syntax of printf() function is given below:</p>
+<div class="codeblock" style="width: 1032px; width:100%;margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); width: 100%;font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"format&nbsp;string"</span>,argument_list);&nbsp;&nbsp;</span></p>
+			</li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The<span class="Apple-converted-space">&nbsp;</span><b>format string</b><span class="Apple-converted-space">&nbsp;</span>can 
+be %d (integer), %c (character), %s (string), %f (float) etc.</p>
+<h4 class="h4" style="font-family: erdana, helvetica, arial, sans-serif; color: rgb(97, 11, 75); font-size: 18px; font-weight: 600; margin-left: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+scanf() function</h4>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The<span class="Apple-converted-space">&nbsp;</span><b>scanf() function</b><span class="Apple-converted-space">&nbsp;</span>is 
+used for input. It reads the input data from the console.</p>
+<div class="codeblock" style="width: 1032px; margin: 5px 0px 10px; width:100%;font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0);width:100%; background-color: inherit;">
+			scanf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"format&nbsp;string"</span>,argument_list);&nbsp;&nbsp;</span></p>
+			</li>
+		</ol>
+	</div>
+</div>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Keywords in C:</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+A keyword is a<span class="Apple-converted-space">&nbsp;</span><b>reserved word</b>. 
+You cannot use it as a variable name, constant name etc. There are only 32 
+reserved words (keywords) in 'C' language.</p>
+
+</body>
+
+</html>

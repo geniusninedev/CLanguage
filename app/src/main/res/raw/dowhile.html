@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>do while loop in C</title>
+</head>
+
+<body>
+
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+do while loop in 'C'</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<i>To execute a part of program or code several times</i>, we can use do-while 
+loop of 'c' language. The code given between the do and while block will be 
+executed until condition is true.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+In do while loop, statement is given before the condition, so<span class="Apple-converted-space">&nbsp;</span><i>statement 
+or code will be executed at lease one time</i>. In other words, we can say it is 
+executed 1 or more times.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+It is better if you have to execute the code at least once.</p>
+<h4 class="h4" style="font-family: erdana, helvetica, arial, sans-serif; color: rgb(97, 11, 75); font-size: 18px; font-weight: 600; margin-left: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+do while loop syntax</h4>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The syntax of 'c' language do-while loop is given below:</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			do</span>{&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">
+			//code&nbsp;to&nbsp;be&nbsp;executed</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">while</span>(condition);&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<h4 class="h4" style="font-family: erdana, helvetica, arial, sans-serif; color: rgb(97, 11, 75); font-size: 18px; font-weight: 600; margin-left: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+do while example</h4>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+There is given the simple program of 'c' language do while loop where we are 
+printing the table of 1.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;&nbsp;&nbsp;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;conio.h&gt;&nbsp;&nbsp;</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;i=1;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			clrscr();&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			do</span>{&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%d&nbsp;\n"</span>,i);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			i++;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">while</span>(i&lt;=10);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			getch();&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<h4 class="h4" style="font-family: erdana, helvetica, arial, sans-serif; color: rgb(97, 11, 75); font-size: 18px; font-weight: 600; margin-left: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output</h4>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre>
+</div>
+<h4 class="h4" style="font-family: erdana, helvetica, arial, sans-serif; color: rgb(97, 11, 75); font-size: 18px; font-weight: 600; margin-left: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Program to print table for the given number using do while loop</h4>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;&nbsp;&nbsp;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;conio.h&gt;&nbsp;&nbsp;</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;i=1,number=0;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			clrscr();&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Enter&nbsp;a&nbsp;number:&nbsp;"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			scanf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%d"</span>,&amp;number);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			do</span>{&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%d&nbsp;\n"</span>,(number*i));&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			i++;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">while</span>(i&lt;=10);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			getch();&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<h4 class="h4" style="font-family: erdana, helvetica, arial, sans-serif; color: rgb(97, 11, 75); font-size: 18px; font-weight: 600; margin-left: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output</h4>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>Enter a number: 5
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+</pre>
+</div>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>Enter a number: 10
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+</pre>
+</div>
+<h4 class="h4" style="font-family: erdana, helvetica, arial, sans-serif; color: rgb(97, 11, 75); font-size: 18px; font-weight: 600; margin-left: 0px; padding: 0px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Infinitive do while loop</h4>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+If you pass 1 as a expression in do while loop, it will run infinite number of 
+times.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/do-while-loop-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			do</span>{&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">
+			//statement</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1220px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">while</span>(1);&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+
+</body>
+
+</html>

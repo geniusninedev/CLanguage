@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>File Handling in C</title>
+</head>
+
+<body>
+
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+File Handling in C</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+File Handling in c language<span class="Apple-converted-space">&nbsp;</span>is<span class="Apple-converted-space">&nbsp;</span><em>used 
+to open, read, write, search or close file</em>. It is used for permanent 
+storage.</p>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Advantage of File</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+It<span class="Apple-converted-space">&nbsp;</span><em>will contain the data even 
+after program exit</em>. Normally we use variable or array to store data, but 
+data is lost after program exit. Variables and arrays are non-permanent storage 
+medium whereas file is permanent storage medium.</p>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Functions for file handling</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+There are many functions in C library to open, read, write, search and close 
+file. A list of file functions are given below:</p>
+<table class="alt" style="width: 100%; text-align: initial; border: 1px solid rgb(255, 192, 203); display: table; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		No.</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		Function</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		Description</th>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		1</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fopen()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens new or existing file</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		2</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fprintf()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		write data into file</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		3</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fscanf()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		reads data from file</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		4</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fputc()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		writes a character into file</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		5</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fgetc()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		reads a character from file</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		6</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fclose()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		closes the file</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		7</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fseek()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		sets the file pointer to given position</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		8</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fputw()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		writes an integer to file</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		9</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		fgetw()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		reads an integer from file</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		10</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		ftell()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		returns current position</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		11</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		rewind()</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		sets the file pointer to the beginning of the file</td>
+	</tr>
+</table>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Opening File: fopen()</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fopen() function is used to open a file. The syntax of fopen() function is 
+given below:</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/file-handling-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/file-handling-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/file-handling-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			FILE</span>&nbsp;*fopen(&nbsp;<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">const</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;*&nbsp;filename,&nbsp;<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">const</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;*&nbsp;mode&nbsp;);&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+You can use one of the following modes in the fopen() function.</p>
+<table class="alt" style="width: 100%; text-align: initial; border: 1px solid rgb(255, 192, 203); display: table; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		Mode</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		Description</th>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		r</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a text file in read mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		w</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a text file in write mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		a</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a text file in append mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		r+</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a text file in read and write mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		w+</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a text file in read and write mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		a+</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a text file in read and write mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		rb</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a binary file in read mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		wb</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a binary file in write mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		ab</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a binary file in append mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		rb+</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a binary file in read and write mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		wb+</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a binary file in read and write mode</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		ab+</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		opens a binary file in read and write mode</td>
+	</tr>
+</table>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Closing File: fclose()</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fclose() function is used to close a file. The syntax of fclose() function 
+is given below:</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/file-handling-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/file-handling-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;fclose(&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*fp&nbsp;);&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+
+</body>
+
+</html>

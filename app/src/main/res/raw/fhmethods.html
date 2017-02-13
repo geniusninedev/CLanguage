@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>C fprintf</title>
+</head>
+
+<body>
+
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C fprintf() and fscanf()</h1>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Writing File : fprintf() function</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fprintf() function is used to write set of characters into file. It sends 
+formatted output to a stream.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;fprintf(<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream,&nbsp;<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">const</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;*format&nbsp;[,&nbsp;argument,&nbsp;...])&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			main(){&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fp&nbsp;=&nbsp;fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"file.txt"</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"w"</span>);<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//opening&nbsp;file</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fprintf(fp,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Hello&nbsp;file&nbsp;by&nbsp;fprintf...\n"</span>);<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//writing&nbsp;data&nbsp;into&nbsp;file</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fclose(fp);<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//closing&nbsp;file</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Reading File : fscanf() function</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fscanf() function is used to read set of characters from file. It reads a 
+word from the file and returns EOF at the end of file.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;fscanf(<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream,&nbsp;<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">const</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;*format&nbsp;[,&nbsp;argument,&nbsp;...])&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			main(){&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;buff[255];<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//creating&nbsp;char&nbsp;array&nbsp;to&nbsp;store&nbsp;data&nbsp;of&nbsp;file</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fp&nbsp;=&nbsp;fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"file.txt"</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"r"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">while</span>(fscanf(fp,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%s"</span>,&nbsp;buff)!=EOF){&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%s&nbsp;"</span>,&nbsp;buff&nbsp;);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fclose(fp);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>Hello file by fprintf...
+</pre>
+</div>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C File Example: Storing employee information</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Let's see a file handling example to store employee information as entered by 
+user from console. We are going to store id, name and salary of the employee.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fprintf-fscanf-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main()&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			{&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*fptr;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;id;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;name[30];&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">float</span>&nbsp;salary;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;fptr&nbsp;=&nbsp;fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"emp.txt"</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"w+"</span>);<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">/*&nbsp;&nbsp;open&nbsp;for&nbsp;writing&nbsp;*/</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">if</span>&nbsp;(fptr&nbsp;==&nbsp;NULL)&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"File&nbsp;does&nbsp;not&nbsp;exists&nbsp;\n"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">return</span>;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Enter&nbsp;the&nbsp;id\n"</span>);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;scanf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%d"</span>,&nbsp;&amp;id);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;fprintf(fptr,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Id=&nbsp;%d\n"</span>,&nbsp;id);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Enter&nbsp;the&nbsp;name&nbsp;\n"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;scanf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%s"</span>,&nbsp;name);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;fprintf(fptr,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Name=&nbsp;%s\n"</span>,&nbsp;name);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Enter&nbsp;the&nbsp;salary\n"</span>);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;scanf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%f"</span>,&nbsp;&amp;salary);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;fprintf(fptr,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Salary=&nbsp;%.2f\n"</span>,&nbsp;salary);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1066px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;fclose(fptr);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>Enter the id 
+1
+Enter the name 
+sonoo
+Enter the salary
+120000 
+</pre>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Now open file from current directory. For windows operating system, go to TC\bin 
+directory, you will see emp.txt file. It will have following information.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>emp.txt</strong></p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>Id= 1
+Name= sonoo
+Salary= 120000 </pre>
+</div>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C fputc() and fgetc()</h1>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Writing File : fputc() function</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fputc() function is used to write a single character into file. It outputs a 
+character to a stream.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;fputc(<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;c,&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream)&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			main(){&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fp&nbsp;=&nbsp;fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"file1.txt"</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"w"</span>);<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//opening&nbsp;file</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fputc(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'a'</span>,fp);<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//writing&nbsp;single&nbsp;character&nbsp;into&nbsp;file</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fclose(fp);<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//closing&nbsp;file</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>file1.txt</strong></p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>a
+</pre>
+</div>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Reading File : fgetc() function</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fgetc() function returns a single character from the file. It gets a 
+character from the stream. It returns EOF at the end of file.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;fgetc(<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream)&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputc-fgetc-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;conio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			char</span>&nbsp;c;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			clrscr();&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fp=fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"myfile.txt"</span>,<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"r"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			while</span>((c=fgetc(fp))!=EOF){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%c"</span>,c);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fclose(fp);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 873px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			getch();&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>myfile.txt</strong></p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>this is simple text message</pre>
+</div>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C fputs() and fgets()</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fputs() and fgets() in C programming are used to write and read string from 
+stream. Let's see examples of writing and reading file using fgets() and fgets() 
+functions.</p>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Writing File : fputs() function</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fputs() function writes a line of characters into file. It outputs string to 
+a stream.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;fputs(<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">const</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;*s,&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream)&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;conio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			clrscr();&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fp=fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"myfile2.txt"</span>,<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"w"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fputs(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"hello&nbsp;c&nbsp;programming"</span>,fp);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fclose(fp);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			getch();&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>myfile2.txt</strong></p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>hello c programming
+</pre>
+</div>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Reading File : fgets() function</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fgets() function reads a line of characters from file. It gets string from a 
+stream.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			char</span>*&nbsp;fgets(<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;*s,&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;n,&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream)&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fputs-fgets-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;conio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			char</span>&nbsp;text[300];&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			clrscr();&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fp=fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"myfile2.txt"</span>,<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"r"</span>);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%s"</span>,fgets(text,200,fp));&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fclose(fp);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			getch();&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1150px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>hello c programming</pre>
+</div>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C fseek() function</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The fseek() function is used to set the file pointer to the specified offset. It 
+is used to write data into file at desired location.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fseek-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fseek-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fseek-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 838px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;fseek(<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream,&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">long</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;offset,&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;whence)&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+There are 3 constants used in the fseek() function for whence: SEEK_SET, 
+SEEK_CUR and SEEK_END.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/fseek-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fseek-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/fseek-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 838px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 838px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 838px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fp&nbsp;=&nbsp;fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"myfile.txt"</span>,<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"w+"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fputs(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"This&nbsp;is&nbsp;javatpoint"</span>,&nbsp;fp);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 838px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fseek(&nbsp;fp,&nbsp;7,&nbsp;SEEK_SET&nbsp;);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 838px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fputs(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"sonoo&nbsp;jaiswal"</span>,&nbsp;fp);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fclose(fp);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 838px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>myfile.txt</strong></p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>This is sonoo jaiswal</pre>
+</div>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C rewind() function</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The rewind() function sets the file pointer at the beginning of the stream. It 
+is useful if you have to use stream many times.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;rewind(<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream)&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<p class="filename" style="font-style: italic; font-size: 14px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+File: file.txt</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-xml" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			this&nbsp;is&nbsp;a&nbsp;simple&nbsp;text&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p class="filename" style="font-style: italic; font-size: 14px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+File: rewind.c</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/rewind-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;conio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			char</span>&nbsp;c;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			clrscr();&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fp=fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"file.txt"</span>,<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"r"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			while</span>((c=fgetc(fp))!=EOF){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%c"</span>,c);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			rewind(fp);<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//moves&nbsp;the&nbsp;file&nbsp;pointer&nbsp;at&nbsp;beginning&nbsp;of&nbsp;the&nbsp;file</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			while</span>((c=fgetc(fp))!=EOF){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%c"</span>,c);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			fclose(fp);&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			getch();&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>this is a simple textthis is a simple text
+</pre>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+As you can see, rewind() function moves the file pointer at beginning of the 
+file that is why "this is simple text" is printed 2 times. If you don't call 
+rewind() function, "this is simple text" will be printed only once.</p>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C ftell() function</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The ftell() function returns the current file position of the specified stream. 
+We can use ftell() function to get the total size of a file after moving file 
+pointer at the end of file. We can use SEEK_END constant to move the file 
+pointer at the end of file.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Syntax:</strong></p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/ftell-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/ftell-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/ftell-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			long</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;ftell(<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*stream)&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong>Example:</strong></p>
+<p class="filename" style="font-style: italic; font-size: 14px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+File: ftell.c</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/ftell-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/ftell-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/ftell-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;conio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main&nbsp;(){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">FILE</span>&nbsp;*fp;&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;length;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;clrscr();&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fp&nbsp;=&nbsp;fopen(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"file.txt"</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"r"</span>);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fseek(fp,&nbsp;0,&nbsp;SEEK_END);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;length&nbsp;=&nbsp;ftell(fp);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;fclose(fp);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Size&nbsp;of&nbsp;file:&nbsp;%d&nbsp;bytes"</span>,&nbsp;length);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;getch();&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>Size of file: 21 bytes</pre>
+</div>
+
+</body>
+
+</html>

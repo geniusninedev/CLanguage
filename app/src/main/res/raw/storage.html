@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Storage Classes in C</title>
+</head>
+
+<body>
+
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Storage Classes in C</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Storage classes are used to define scope and life time of a variable. There are 
+four storage classes in C programming.</p>
+<ul class="points" style="list-style: circle; line-height: normal; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; color: rgb(0, 0, 0); letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">auto</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">extern</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">static</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">register</p>
+	</li>
+</ul>
+<table class="alt" style="width: 100%; text-align: initial; border: 1px solid rgb(255, 192, 203); display: table; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Storage Classes</p>
+		</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Storage Place</p>
+		</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Default Value</p>
+		</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Scope</p>
+		</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Life-time</p>
+		</th>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">auto</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">RAM</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Garbage Value</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Local</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Within function</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">extern</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">RAM</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Zero</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Global</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Till the end of main program, May be declared anywhere in the program</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">static</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">RAM</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Zero</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Local</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Till the end of main program, Retains value between multiple functions 
+		call</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">register</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Register</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Garbage Value</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Local</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">Within function</p>
+		</td>
+	</tr>
+</table>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+1) auto</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The auto keyword is applied to all local variables automatically. It is the 
+default storage class that is why it is known as automatic variable.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></p>
+			</div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;a=10;&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			auto&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;b=10;<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//same&nbsp;like&nbsp;above</span>&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"%d&nbsp;%d"</span>,a,b);&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></p>
+			</li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>10 10
+</pre>
+</div>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+2) register</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The register variable allocates memory in register than RAM. Its size is same of 
+register size. It has a faster access than other variables.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+It is recommended to use register variable only for quick access such as in 
+counter.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></p>
+			</div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			register</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;counter=0;&nbsp;&nbsp;</span></p>
+			</li>
+		</ol>
+	</div>
+</div>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+3) static</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The<span class="Apple-converted-space">&nbsp;</span><strong>static</strong><span class="Apple-converted-space">&nbsp;</span>variable 
+is initialized only once and exists till the end of the program. It retains its 
+value between multiple functions call.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The static variable has the default value 0 which is provided by compiler.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></p>
+			</div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;func()&nbsp;{&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">static</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;i=0;<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//static&nbsp;variable</span>&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;j=0;<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//local&nbsp;variable</span>&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;i++;&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;j++;&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"i=&nbsp;%d&nbsp;and&nbsp;j=&nbsp;%d\n"</span>,&nbsp;i,&nbsp;j);&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main()&nbsp;{&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;func();&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;func();&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;func();&nbsp;&nbsp;</span></p>
+			</li>
+			<li class="alt" style="width: 943px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></p>
+			</li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>i= 1 and j= 1
+i= 2 and j= 1
+i= 3 and j= 1
+</pre>
+</div>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+4) extern</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The extern variable is visible to all the programs. It is used if two or more 
+files are sharing same variable or function.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/storage-classes-in-c#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></p>
+			</div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			extern</span>&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">int</span>&nbsp;counter=0;&nbsp;&nbsp;</span></p>
+			</li>
+		</ol>
+	</div>
+</div>
+
+</body>
+
+</html>

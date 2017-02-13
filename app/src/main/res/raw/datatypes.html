@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Data Types in C</title>
+</head>
+
+<body>
+
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Data Types in 'C'</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+A data type specifies the type of data that a variable can store such as 
+integer, floating, character etc.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+<img alt="C Data Types" src="data.jpg" style="max-width: 100%; height: auto; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" /></p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+There are 4 types of data types in 'C' language.</p>
+<table class="alt" style="width: 100%; text-align: initial; border: 1px solid rgb(255, 192, 203); display: table; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Types</p>
+		</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Data Types</p>
+		</th>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Basic Data Type</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		int, char, float, double</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Derived Data Type</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		array, pointer, structure, union</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Enumeration Data Type</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		enum</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Void Data Type</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		void</p>
+		</td>
+	</tr>
+</table>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Basic Data Types</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The basic data types are integer-based and floating-point based. 'C' language 
+supports both signed and unsigned literals.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The memory size of basic data types may change according to 32 or 64 bit 
+operating system.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Let's see the basic data types. It size is given according to 32 bit OS.</p>
+<table class="alt" style="width: 100%; text-align: initial; border: 1px solid rgb(255, 192, 203); display: table; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Data Types</p>
+		</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Memory Size</p>
+		</th>
+		<th style="color: black; font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Range</p>
+		</th>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<b>char</b></p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		1 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		−128 to 127</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		signed char</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		1 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		−128 to 127</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		unsigned char</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		1 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		0 to 127</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<b>short</b></p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		−32,768 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		signed short</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		−32,768 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		unsigned short</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		0 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<b>int</b></p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		−32,768 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		signed int</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		−32,768 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		unsigned int</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		0 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<b>short int</b></p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		−32,768 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		signed short int</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		−32,768 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		unsigned short int</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		2 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		0 to 32,767</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<b>long int</b></p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		4 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		signed long int</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		4 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		unsigned long int</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		4 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<b>float</b></p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		4 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<b>double</b></p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		8 byte</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify; width: 300px;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<b>long double</b></p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		10 byte</p>
+		</td>
+	</tr>
+</table>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+'C' Operators</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+An operator is simply a symbol that is used to perform operations. There can be 
+many types of operations like arithmetic, logical, bitwise etc.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+There are following types of operators to perform different types of operations 
+in 'C' language.</p>
+<ul class="points" style="list-style: circle; line-height: normal; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; color: rgb(0, 0, 0); letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+	Arithmetic Operators</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+	Relational Operators</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+	Shift Operators</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+	Logical Operators</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+	Bitwise Operators</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+	Ternary or Conditional Operators</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+	Assignment Operator</p>
+	</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+	Misc Operator</p>
+	</li>
+</ul>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Precedence of Operators in 'C'</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The precedence of operator species that which operator will be evaluated first 
+and next. The associativity specifies the operators direction to be evaluated, 
+it may be left to right or right to left.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Let's understand the precedence by the example given below:</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+				<a href="http://www.javatpoint.com/c-operators#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-operators#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-operators#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></p>
+			</div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 1232px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			int</span>&nbsp;value=10+20*10;&nbsp;&nbsp;</span></p>
+			</li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The value variable will contain<span class="Apple-converted-space">&nbsp;</span><b>210</b><span class="Apple-converted-space">&nbsp;</span>because 
+* (multiplicative operator) is evaluated before + (additive operator).</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The precedence and associativity of 'C' operators is given below:</p>
+<table class="alt" style="width: 100%; text-align: initial; border: 1px solid rgb(255, 192, 203); display: table; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Category</p>
+		</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Operator</p>
+		</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Associativity</p>
+		</th>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Postfix</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		() [] -&gt; . ++ - -</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Unary</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		+ - ! ~ ++ - - (type)* &amp; sizeof</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Right to left</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Multiplicative</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		* / %</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Additive</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		+ -</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Shift</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		&lt;&lt; &gt;&gt;</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Relational</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		&lt; &lt;= &gt; &gt;=</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Equality</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		== !=</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Bitwise AND</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		&amp;</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Bitwise XOR</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		^</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Bitwise OR</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		|</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Logical AND</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		&amp;&amp;</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Logical OR</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		||</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Conditional</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		?:</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Right to left</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Assignment</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		= += -= *= /= %=&gt;&gt;= &lt;&lt;= &amp;= ^= |=</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Right to left</p>
+		</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Comma</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		,</p>
+		</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		Left to right</p>
+		</td>
+	</tr>
+</table>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+<br class="Apple-interchange-newline" />
+</p>
+
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>C Preprocessor Directives</title>
+</head>
+
+<body>
+
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C Preprocessor Directives</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The C preprocessor is a micro processor that is used by compiler to transform 
+your code before compilation. It is called micro preprocessor because it allows 
+us to add macros.Note: Proprocessor direcives are executed before compilation.</p>
+<img alt="C preprocessor" src="pre.png" style="max-width: 100%; height: auto; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); float: right;" /><p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+All preprocessor directives starts with hash # symbol.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Let's see a list of preprocessor directives.</p>
+<ul class="points" style="list-style: circle; line-height: normal; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; color: rgb(0, 0, 0); letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#include</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#define</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#undef</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#ifdef</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#ifndef</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#if</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#else</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#elif</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#endif</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#error</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	#pragma</li>
+</ul>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C Macros</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+A macro is a segment of code which is replaced by the value of macro. Macro is 
+defined by #define directive. There are two types of macros:</p>
+<ol class="points" style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	Object-like Macros</li>
+	<li style="padding: 0.2em; line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">
+	Function-like Macros</li>
+</ol>
+<h2 class="h3" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 21px; color: rgb(97, 11, 75); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Object-like Macros</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The object-like macro is an identifier that is replaced by value. It is widely 
+used to represent numeric constants. For example:</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 959px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#define&nbsp;PI&nbsp;3.14</span>&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Here, PI is the macro name which will be replaced by the value 3.14.</p>
+<h2 class="h3" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 21px; color: rgb(97, 11, 75); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Function-like Macros</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The function-like macro looks like function call. For example:</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 959px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#define&nbsp;MIN(a,b)&nbsp;((a)&lt;(b)?(a):(b))&nbsp;&nbsp;</span>&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Here, MIN is the macro name.</p>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C Predefined Macros</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+ANSI C defines many predefined macros that can be used in c program.</p>
+<table class="alt" style="width: 100%; text-align: initial; border: 1px solid rgb(255, 192, 203); display: table; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		No.</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		Macro</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		Description</th>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		1</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		_DATE_</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		represents current date in "MMM DD YYYY" format.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		2</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		_TIME_</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		represents current time in "HH:MM:SS" format.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		3</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		_FILE_</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		represents current file name.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		4</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		_LINE_</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		represents current line number.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		5</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		_STDC_</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		It is defined as 1 when compiler complies with the ANSI standard.</td>
+	</tr>
+</table>
+<h2 class="h3" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 21px; color: rgb(97, 11, 75); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+C predefined macros example</h2>
+<p class="filename" style="font-style: italic; font-size: 14px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+File: simple.c</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-macros#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 959px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			main()&nbsp;{&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 959px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"File&nbsp;:%s\n"</span>,&nbsp;__FILE__&nbsp;);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Date&nbsp;:%s\n"</span>,&nbsp;__DATE__&nbsp;);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 959px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Time&nbsp;:%s\n"</span>,&nbsp;__TIME__&nbsp;);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Line&nbsp;:%d\n"</span>,&nbsp;__LINE__&nbsp;);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 959px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"STDC&nbsp;:%d\n"</span>,&nbsp;__STDC__&nbsp;);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>File :simple.c
+Date :Dec 6 2015
+Time :12:28:46
+Line :6
+STDC :1</pre>
+</div>
+
+</body>
+
+</html>

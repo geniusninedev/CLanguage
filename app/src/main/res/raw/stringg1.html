@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>C Strings</title>
+</head>
+
+<body>
+
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+'c' Strings</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+String<span class="Apple-converted-space">&nbsp;</span>in 'c' language is an<span class="Apple-converted-space">&nbsp;</span><em>array 
+of characters</em><span class="Apple-converted-space">&nbsp;</span>that is terminated 
+by \0 (null character).</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+There are two ways to declare string in 'c' language.</p>
+<ol style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<li style="line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">By char 
+	array</li>
+	<li style="line-height: 23px; color: rgb(0, 0, 0); margin-top: 4px;">By 
+	string literal</li>
+</ol>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Let's see the example of declaring<span class="Apple-converted-space">&nbsp;</span>string 
+by char array<span class="Apple-converted-space">&nbsp;</span>in 'c' language.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			char</span>&nbsp;ch[10]={<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'j'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'a'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'v'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'a'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'t'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'p'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'o'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'i'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'n'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'t'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'\0'</span>};&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+As you know well, array index starts from 0, so it will be represented as in the 
+figure given below.</p>
+<img alt="C Array" src="stringg.png" style="max-width: 100%; height: auto; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);" /><p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+While declaring string, size is not mandatory. So you can write the above code 
+as given below:</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 769px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			char</span>&nbsp;ch[]={<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'j'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'a'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'v'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'a'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'t'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'p'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'o'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'i'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'n'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'t'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'\0'</span>};&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+You can also define<span class="Apple-converted-space">&nbsp;</span>string by 
+string literal<span class="Apple-converted-space">&nbsp;</span>in 'c' 
+language. For example:</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 100%; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">
+			char</span>&nbsp;ch[]=<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"javatpoint"</span>;&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+In such case, '\0' will be appended at the end of string by the compiler.</p>
+<h2 class="h3" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 21px; color: rgb(97, 11, 75); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Difference between char array and string literal</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The only difference is that string literal cannot be changed whereas string 
+declared by char array can be changed</p>
+<h2 class="h2" style="line-height: 1.3em; font-family: erdana, helvetica, arial, sans-serif; font-size: 25px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+String Example in 'c'</h2>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Let's see a simple example to declare and print string. The '%s' is used to 
+print string in 'c' language.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-strings#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 769px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&nbsp;&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main&nbsp;()&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 769px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			{&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;ch[11]={<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'j'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'a'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'v'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'a'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'t'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'p'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'o'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'i'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'n'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'t'</span>,&nbsp;<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">'\0'</span>};&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 769px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;ch2[11]=<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"javatpoint"</span>;&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 769px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Char&nbsp;Array&nbsp;Value&nbsp;is:&nbsp;%s\n"</span>,&nbsp;ch);&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"String&nbsp;Literal&nbsp;Value&nbsp;is:&nbsp;%s\n"</span>,&nbsp;ch2);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 769px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Output:</p>
+<div class="codeblock3" style="width: 100%; margin: 5px 0px 10px; background: rgb(249, 251, 249); padding: 0px 0px 0px 10px; font-family: verdana; border: 1px solid rgb(213, 221, 198); color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;">
+	<pre>Char Array Value is: javatpoint
+String Literal Value is: javatpoint</pre>
+</div>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+'c' gets() and puts() functions</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+The gets() function reads string from user and puts() function prints the 
+string. Both functions are defined in &lt;stdio.h&gt; header file.</p>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Let's see a simple program to read and write string using gets() and puts() 
+functions.</p>
+<div class="codeblock" style="width: 100%; margin: 5px 0px 10px; font-family: verdana; padding: 0px; border: 1px solid rgb(213, 221, 198); box-shadow: rgb(212, 212, 212) 5px 3px 10px; color: rgb(0, 0, 0); font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<div class="dp-highlighter" style="width: inherit; overflow: hidden; padding-top: 0px; margin: 8px 0px !important;">
+		<div class="bar" style="padding-left: 45px;">
+			<div class="tools">
+				<a href="http://www.javatpoint.com/c-gets-puts#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-gets-puts#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a>
+				<a href="http://www.javatpoint.com/c-gets-puts#" onclick="dp.sh.Toolbar.Command('About',this);return false;" style="color: green; text-decoration: none; background: none; border: none; padding: 0px; margin: 0px;">
+				</a></div>
+		</div>
+		<ol class="dp-cpp" start="1" style="margin: 0px; padding: 0px; border: none;">
+			<li class="alt" style="width: 884px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;stdio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="preprocessor" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">
+			#include&lt;conio.h&gt;</span>&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 884px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			<span class="keyword" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 102, 153); background-color: inherit; font-weight: 700;">
+			void</span>&nbsp;main(){&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;<span class="datatypes" style="margin: 0px; padding: 0px; border: none; color: rgb(46, 139, 87); background-color: inherit; font-weight: bold;">char</span>&nbsp;name[50];&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 884px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;clrscr();&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Enter&nbsp;your&nbsp;name:&nbsp;"</span>);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 884px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;gets(name);&nbsp;<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//reads&nbsp;string&nbsp;from&nbsp;user</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;printf(<span class="string" style="margin: 0px; padding: 0px; border: none; color: blue; background-color: inherit;">"Your&nbsp;name&nbsp;is:&nbsp;"</span>);&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 884px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;puts(name);&nbsp;&nbsp;<span class="comment" style="margin: 0px; padding: 0px; border: none; color: rgb(0, 130, 0); background-color: inherit;">//displays&nbsp;string</span>&nbsp;&nbsp;</span></li>
+			<li class="" style="margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			&nbsp;&nbsp;&nbsp;&nbsp;getch();&nbsp;&nbsp;</span></li>
+			<li class="alt" style="width: 884px; margin: 4px 0px 0px; padding: 0px 3px 0px 10px !important; border: none; line-height: 23px; color: rgb(0, 0, 0);">
+			<span style="margin: 0px; padding: 0px; border: none; color: rgb(0, 0, 0); background-color: inherit;">
+			}&nbsp;&nbsp;</span></li>
+		</ol>
+	</div>
+</div>
+<h1 class="h1" style="line-height: 1.3em; margin-top: 5px; font-family: erdana, helvetica, arial, sans-serif; font-size: 29px; color: rgb(97, 11, 56); font-weight: 400; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+'c' String Functions</h1>
+<p style="color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+There are many important string functions defined in "string.h" library.</p>
+<table class="alt" style="width: 100%; text-align: initial; border: 1px solid rgb(255, 192, 203); display: table; border-collapse: collapse; border-spacing: 0px; color: rgb(0, 0, 0); font-family: verdana, helvetica, arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		No.</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		Function</th>
+		<th style="color: black; background: linear-gradient(rgb(246, 255, 225), rgb(227, 229, 214)); font-size: 17px; font-family: &quot;times new roman&quot;; padding: 5px; vertical-align: top; text-align: left;">
+		Description</th>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		1)</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<a href="http://www.javatpoint.com/c-strlen" style="color: green; text-decoration: none;">
+		strlen(string_name)</a></td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		returns the length of string name.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		2)</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<a href="http://www.javatpoint.com/c-strcpy" style="color: green; text-decoration: none;">
+		strcpy(destination, source)</a></td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		copies the contents of source string to destination string.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		3)</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<a href="http://www.javatpoint.com/c-strcat" style="color: green; text-decoration: none;">
+		strcat(first_string, second_string)</a></td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		concats or joins first string with second string. The result of the 
+		string is stored in first string.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		4)</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<a href="http://www.javatpoint.com/c-strcmp" style="color: green; text-decoration: none;">
+		strcmp(first_string, second_string)</a></td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		compares the first string with second string. If both strings are same, 
+		it returns 0.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		5)</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<a href="http://www.javatpoint.com/c-strrev" style="color: green; text-decoration: none;">
+		strrev(string)</a></td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		returns reverse string.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(246, 255, 225);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		6)</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<a href="http://www.javatpoint.com/c-strlwr" style="color: green; text-decoration: none;">
+		strlwr(string)</a></td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		returns string characters in lowercase.</td>
+	</tr>
+	<tr style="display: table-row; vertical-align: inherit; border-color: inherit; background-color: rgb(255, 255, 255);">
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		7)</td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		<a href="http://www.javatpoint.com/c-strupr" style="color: green; text-decoration: none;">
+		strupr(string)</a></td>
+		<td style="border: 1px solid rgb(255, 192, 203); padding: 5px; vertical-align: top; color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 13px; font-family: verdana, helvetica, arial, sans-serif; line-height: 23px; margin-left: 20px; text-align: justify;">
+		returns string characters in uppercase.</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

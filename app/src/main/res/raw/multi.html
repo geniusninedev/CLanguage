@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Program to Multiply Two Numbers</title>
+<style type="text/css">
+.auto-style1 {
+	text-align: justify;
+}
+.auto-style2 {
+	line-height: 150%;
+}
+</style>
+</head>
+
+<body>
+
+<h2 style="line-height: 1.25; font-weight: normal; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Roboto; font-size: 2em; margin: 0.8em 0px 0.45em; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+Program to Multiply Two Numbers</h2>
+<div class="auto-style1">
+<pre class="auto-style2" width:100%; style="overflow: auto; font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, monospace, serif; font-size: 16px; font-style: normal; margin-bottom: 10px; background: rgb(238, 238, 238); padding: 5px; border: 1px solid rgb(234, 234, 236); white-space: pre !important; width: 100%; max-height: 600px; color: rgb(16, 24, 32); font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><code style="font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; font-size: 16px; font-style: normal; font-weight: normal;"><span class="com" style="color: gray;">#include</span><span class="pln" style="color: rgb(0, 0, 0);"> </span><span class="str" style="color: maroon;">&lt;stdio.h&gt;</span><span class="pln" style="color: rgb(0, 0, 0);">
+</span><span class="kwd" style="color: rgb(0, 0, 139);">int</span><span class="pln" style="color: rgb(0, 0, 0);"> main</span><span class="pun" style="color: rgb(0, 0, 0);">()</span><span class="pln" style="color: rgb(0, 0, 0);">
+</span><span class="pun" style="color: rgb(0, 0, 0);">{</span><span class="pln" style="color: rgb(0, 0, 0);">
+ </span><span class="kwd" style="color: rgb(0, 0, 139);">double</span><span class="pln" style="color: rgb(0, 0, 0);"> firstNumber</span><span class="pun" style="color: rgb(0, 0, 0);">,</span><span class="pln" style="color: rgb(0, 0, 0);"> secondNumber</span><span class="pun" style="color: rgb(0, 0, 0);">,</span><span class="pln" style="color: rgb(0, 0, 0);"> productOfTwoNumbers</span><span class="pun" style="color: rgb(0, 0, 0);">;</span><span class="pln" style="color: rgb(0, 0, 0);">
+    printf</span><span class="pun" style="color: rgb(0, 0, 0);">(</span><span class="str" style="color: maroon;">"Enter two numbers: "</span><span class="pun" style="color: rgb(0, 0, 0);">);</span><span class="pln" style="color: rgb(0, 0, 0);">
+
+    scanf</span><span class="pun" style="color: rgb(0, 0, 0);">(</span><span class="str" style="color: maroon;">"%lf %lf"</span><span class="pun" style="color: rgb(0, 0, 0);">,</span><span class="pln" style="color: rgb(0, 0, 0);"> </span><span class="pun" style="color: rgb(0, 0, 0);">&amp;</span><span class="pln" style="color: rgb(0, 0, 0);">firstNumber</span><span class="pun" style="color: rgb(0, 0, 0);">,</span><span class="pln" style="color: rgb(0, 0, 0);"> </span><span class="pun" style="color: rgb(0, 0, 0);">&amp;</span><span class="pln" style="color: rgb(0, 0, 0);">secondNumber</span><span class="pun" style="color: rgb(0, 0, 0);">);</span><span class="pln" style="color: rgb(0, 0, 0);">  
+ 
+   productOfTwoNumbers </span><span class="pun" style="color: rgb(0, 0, 0);">=</span><span class="pln" style="color: rgb(0, 0, 0);"> firstNumber </span><span class="pun" style="color: rgb(0, 0, 0);">*</span><span class="pln" style="color: rgb(0, 0, 0);"> secondNumber</span><span class="pun" style="color: rgb(0, 0, 0);">;</span><span class="pln" style="color: rgb(0, 0, 0);">  
+
+  printf</span><span class="pun" style="color: rgb(0, 0, 0);">(</span><span class="str" style="color: maroon;">"Product = %.2lf"</span><span class="pun" style="color: rgb(0, 0, 0);">,</span><span class="pln" style="color: rgb(0, 0, 0);"> productofTwoNumbers</span><span class="pun" style="color: rgb(0, 0, 0);">);</span><span class="pln" style="color: rgb(0, 0, 0);">
+    
+    </span><span class="kwd" style="color: rgb(0, 0, 139);">return</span><span class="pln" style="color: rgb(0, 0, 0);"> </span><span class="lit" style="color: maroon;">0</span><span class="pun" style="color: rgb(0, 0, 0);">;</span><span class="pln" style="color: rgb(0, 0, 0);">
+</span><span class="pun" style="color: rgb(0, 0, 0);">}</span></code></pre>
+</div>
+<p style="margin-bottom: 1.4em; -webkit-font-smoothing: antialiased; color: rgb(16, 24, 32); font-family: Verdana, Geneva, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+<strong style="font-weight: bold; color: rgb(85, 85, 85); font-size: 0.98em;">
+Output</strong></p>
+<pre style="overflow: auto; font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; font-size: 16px; font-style: normal; margin-bottom: 1.8em; background: rgb(246, 246, 246); padding: 15px 18.1875px; border: 1px solid rgb(234, 234, 236); margin-top: -0.8em; color: rgb(16, 24, 32); font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><samp style="font-family: Consolas, Menlo, Monaco, &quot;Lucida Console&quot;, &quot;Liberation Mono&quot;, &quot;DejaVu Sans Mono&quot;, &quot;Bitstream Vera Sans Mono&quot;, &quot;Courier New&quot;, Courier, monospace; font-size: 16px; font-style: normal; font-weight: normal;">Enter two numbers: 2.4
+1.12
+Product = 2.69</samp></pre>
+
+</body>
+
+</html>

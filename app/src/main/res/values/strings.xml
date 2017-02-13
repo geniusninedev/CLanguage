@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">C Language</string>
+    <string name="app_name1">Control Statement List</string>
+    <string name="app_name3">Function, Array And Pointer</string>
+    <string name="app_name9">Introduction</string>
+    <string name="app_name10">C Tutorials</string>
+    <string name="app_name5"> File Handling</string>
+    <string name="app_name22">Rating</string>
+    <string name="app_name4">String, Math And Structure Union</string>
+    <string name="app_name6">Programs</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

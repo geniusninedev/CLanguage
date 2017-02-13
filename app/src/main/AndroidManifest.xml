@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geniusnine.android.clanguage">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cimage"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CTutorials.Tutorials"
+            android:label="@string/app_name10"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CTutorials.CallTutorialsDetails"
+            android:label="@string/app_name10"
+            android:parentActivityName=".CTutorials.Tutorials" />
+        <activity
+            android:name=".CIntroduction.Introduction"
+            android:label="@string/app_name9"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ControlStatements.ControStateList"
+            android:label="@string/app_name1"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ControlStatements.CallControlStatementDetails"
+            android:label="@string/app_name1"
+            android:parentActivityName=".ControlStatements.ControStateList" />
+        <activity
+            android:name=".FunctionsArrayPointers.FunctionsarraysAndPointersrefList"
+            android:label="@string/app_name3"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FunctionsArrayPointers.CallFunctionDetails"
+            android:label="@string/app_name3"
+            android:parentActivityName=".FunctionsArrayPointers.FunctionsarraysAndPointersrefList" />
+        <activity
+            android:name=".StringMathUnion.StringMathrefList"
+            android:label="@string/app_name4"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".StringMathUnion.CallStringDetails"
+            android:label="@string/app_name4"
+            android:parentActivityName=".StringMathUnion.StringMathrefList" />
+        <activity
+            android:name=".FileHAndlingAndPreprocessor.FileHandlingList"
+            android:label="@string/app_name5"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FileHAndlingAndPreprocessor.CallFileDetails"
+            android:label="@string/app_name5"
+            android:parentActivityName=".FileHAndlingAndPreprocessor.FileHandlingList" />
+        <activity
+            android:name=".TopCPrograms.programsrefList"
+            android:label="@string/app_name6"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TopCPrograms.CallProgDetails"
+            android:label="@string/app_name6"
+            android:parentActivityName=".TopCPrograms.programsrefList" />
+        <activity android:name=".RatingApp.Rating"
+            android:parentActivityName=".MainActivity"
+            android:label="@string/app_name22"></activity>
+    </application>
+
+</manifest>
